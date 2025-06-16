@@ -1,0 +1,121 @@
+:root{
+  --PrimaryColor:#11356a;
+  --SecondaryColor: #87a2f6;
+  --grey: #e2e1dd;
+  --white: #FFFFFF;
+  --AccentColor:#FFD700;
+  --accentFont:PetitCochon;
+}
+@font-face {
+  font-family: PetitCochon;
+  src: url(./fonts/Petit-Cochon.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: var(--grey);
+}
+.hero-container{
+  background-color: var(--SecondaryColor);
+  background-image: url(./images/background.jpg);
+  width:100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+.hero-text{
+  font-family: var(--accentFont);
+  font-size: 46px;
+  color: var(--white);
+  filter: drop-shadow(2px 2px 2px grey);
+}
+img.hero-seagull-img{
+  position: absolute;
+  bottom:0;
+  right:30px;
+  height: 98%;
+  z-index: 3;
+
+}
+img.hero-decor{
+    position: absolute;
+  bottom:0;
+  left:20%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-content{
+  z-index: 2;
+}
+h1 {
+  color: var(--PrimaryColor);
+  font-family: var(--accentFont);
+  text-transform: uppercase;
+  font-size: 60px;
+}
+h2{
+    color: var(--PrimaryColor);
+  font-family: var(--accentFont);
+  text-transform: uppercase;
+  font-size: 36px;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+  font-size: 18px;
+}
+section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  max-width: 1280px;
+  padding: 0 30px;
+  width: 100%;
+}
+section.description{
+text-align: center;
+}
+.btn{
+  padding: 7px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  line-height: 25px;
+  color: var(--PrimaryColor);
+  background-color: var(--white);
+}
+.btn:hover{
+  background-color: var(--AccentColor);
+}
+.btn2{
+  padding: 7px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  line-height: 25px;
+  background-color: var(--AccentColor);
+    color: var(--PrimaryColor);
+}
+.btn2:hover{
+  background-color: var(--grey);
+}
