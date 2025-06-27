@@ -101,7 +101,7 @@ section {
 .hero-container {
   background-image: url(./images/background.jpg);
   width: 100%;
-  min-height: 550px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,14 +112,15 @@ section {
   font-family: var(--accentFont);
   font-size: 46px;
   color: var(--white);
-  filter: drop-shadow(2px 2px 2px grey);
+  filter: drop-shadow(2px 2px 2px grey); 
 }
 img.hero-seagull-img {
   position: absolute;
   bottom: 10px;
   right: 10%;
-  height: 100%;
-  /* max-width: 30%; */
+  /* height: 100%; */
+  width: 40%;
+  min-width: 420px;
   z-index: 3;
 }
 .horizontal-wave {
@@ -142,11 +143,17 @@ img.hero-seagull-img {
   max-width: 1280px;
   padding: 0 30px;
   width: 100%;
+    overflow-x: clip;
 }
 
 .hero-content p {
   width: 60%;
   font-size: 20px;
+  /* padding-right: 20px; */
+}
+.hero-content h1 {
+  width: 100%;
+  text-wrap: nowrap;
 }
 
 /* VALUES */
@@ -161,6 +168,7 @@ section.values {
   position: relative;
   padding-bottom: 100px;
   flex-wrap: wrap;
+  /* overflow-x: clip; */
 }
 /* .values-content-right{
   max-width: 30%;
@@ -168,9 +176,12 @@ section.values {
 .values-content-left {
   max-width: 50%;
 }
+.values-content-left h2{
+  margin-bottom: 20px;
+}
 .values-content-right {
   position: absolute;
-  max-width: 50%;
+width: 50%;
   /* min-height: 450px; */
   right: 0;
   bottom: -10px;
@@ -215,6 +226,8 @@ section.program {
   margin-top: 50px;
   padding-top: 70px;
   margin-bottom: 150px;
+  position: relative;
+  overflow-x: clip;
 }
 .program-subheading {
   margin-top: -15px;
@@ -234,11 +247,13 @@ p.program-date {
 }
 .discussion-image {
   position: absolute;
-  bottom: -170px;
-  left: 30%;
+  left: 35%;
   z-index: -1;
-  /* width: 100%; */
+  bottom: -160px;
   /* scale: 1.1; */
+}
+.discussion-image img {
+width: 100%;
 }
 /* PARTNERS */
 section.partners {
@@ -293,11 +308,11 @@ section.join {
 .join-left {
   /* background-color: var(--SecondaryColor); */
   width: 45%;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .join-right {
   width: 45%;
-  padding: 30px 0;
+  padding: 20px 0;
   color: var(--grey);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -364,18 +379,22 @@ section.join {
     width: 100%;
     font-size: 18px;
   }
+  .hero-content h1 {
+  text-wrap: wrap;
+}
+
 
   section.history,
   section.program {
     margin-top: 30px;
+    padding-top: 0;
   }
 
   img.hero-seagull-img {
-    top: 20px;
+    top: 30px;
     right: -120px;
-    height: 40%;
     z-index: 1;
-    rotate: -40deg;
+    rotate: -45deg;
   }
   .horizontal-wave {
     bottom: -100px;
@@ -390,16 +409,19 @@ section.join {
     max-width: 100%;
     padding-bottom: 20%;
   }
+
   .values-content-right {
-    max-width: 70%;
-    /* min-height: 30%; */
-    right: -30px;
-  }
+  position: absolute;
+width: 70%;
+  /* min-height: 450px; */
+  right: -30px;
+  bottom: -10px;
+  z-index: -1;
+  max-width: 300px;
+      /* min-width: 400px; */
+}
 
   /* HISTORY */
-  .history-container {
-    overflow-x: hidden;
-  }
 
   .history-container h2 {
     text-align: left;
@@ -414,13 +436,18 @@ section.join {
   }
   /* PROGRAM */
   .discussion-image {
-    left: 0px;
+    left: 10%;
     bottom: -170px;
   }
   .discussion-image img {
-    max-width: 100%;
-  }
+    max-width: 70%;
+    min-width: 400px;
 
+  }
+section.partners{
+  padding: 50px 30px 50px 30px;
+
+}
   .partners img {
     max-width: 70px;
     max-height: 70px;
