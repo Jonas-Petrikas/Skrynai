@@ -112,14 +112,14 @@ section {
   font-family: var(--accentFont);
   font-size: 46px;
   color: var(--white);
-  filter: drop-shadow(2px 2px 2px grey); 
+  filter: drop-shadow(2px 2px 2px grey);
 }
 img.hero-seagull-img {
   position: absolute;
   bottom: 10px;
   right: 10%;
   /* height: 100%; */
-  width: 40%;
+  width: 50%;
   min-width: 420px;
   z-index: 3;
 }
@@ -143,11 +143,11 @@ img.hero-seagull-img {
   max-width: 1280px;
   padding: 0 30px;
   width: 100%;
-    overflow-x: clip;
+  overflow-x: clip;
 }
 
 .hero-content p {
-  width: 60%;
+  width: 50%;
   font-size: 20px;
   /* padding-right: 20px; */
 }
@@ -176,12 +176,12 @@ section.values {
 .values-content-left {
   max-width: 50%;
 }
-.values-content-left h2{
+.values-content-left h2 {
   margin-bottom: 20px;
 }
 .values-content-right {
   position: absolute;
-width: 50%;
+  width: 50%;
   /* min-height: 450px; */
   right: 0;
   bottom: -10px;
@@ -194,13 +194,16 @@ width: 50%;
 /* HISTORY */
 section.history {
   margin-top: 100px;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .history-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  max-width: 1280px;
+  padding: 0 30px;
+  width: 100%;
 }
 .history-container p {
   margin: 0px;
@@ -212,12 +215,13 @@ section.history {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  column-gap: 1%;
+  row-gap: 10px;
   margin-top: 30px;
   justify-content: center;
 }
 .history-images img {
-  width: 30%;
+  width: calc((100% - 2%) / 3);
 }
 /* PROGRAM */
 section.program {
@@ -253,7 +257,7 @@ p.program-date {
   /* scale: 1.1; */
 }
 .discussion-image img {
-width: 100%;
+  width: 100%;
 }
 /* PARTNERS */
 section.partners {
@@ -380,9 +384,8 @@ section.join {
     font-size: 18px;
   }
   .hero-content h1 {
-  text-wrap: wrap;
-}
-
+    text-wrap: wrap;
+  }
 
   section.history,
   section.program {
@@ -411,15 +414,15 @@ section.join {
   }
 
   .values-content-right {
-  position: absolute;
-width: 70%;
-  /* min-height: 450px; */
-  right: -30px;
-  bottom: -10px;
-  z-index: -1;
-  max-width: 300px;
-      /* min-width: 400px; */
-}
+    position: absolute;
+    width: 70%;
+    /* min-height: 450px; */
+    right: -30px;
+    bottom: -10px;
+    z-index: -1;
+    max-width: 300px;
+    /* min-width: 400px; */
+  }
 
   /* HISTORY */
 
@@ -431,7 +434,7 @@ width: 70%;
   .history-images {
     width: 100%;
   }
-  .history-container .container{
+  .history-container .container {
     padding: 0;
   }
   /* PROGRAM */
@@ -442,12 +445,10 @@ width: 70%;
   .discussion-image img {
     max-width: 70%;
     min-width: 400px;
-
   }
-section.partners{
-  padding: 50px 30px 50px 30px;
-
-}
+  section.partners {
+    padding: 50px 30px 50px 30px;
+  }
   .partners img {
     max-width: 70px;
     max-height: 70px;
