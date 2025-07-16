@@ -1,0 +1,32 @@
+<svg width="1212.05" height="266" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="wave-shape" d="M895.99,255.93C821.65,258.51 815.37,171.63 767.98,165.13C750.47,165.13 744.07,174.21 730.06,194.08C685.19,275.14 594.45,274.70 549.90,194.07C527.26,155.14 496.72,155.15 474.07,194.08C429.80,274.84 338.14,274.78 293.91,194.07C279.90,174.21 273.51,165.13 255.99,165.13C208.88,171.42 202.08,258.65 127.99,255.92C54.62,259.04 46.49,171.02 0,165.13L0,0.06C74.41,-2.48 80.57,84.32 127.99,90.86C145.51,90.85 151.90,81.78 165.91,61.90C210.91,-19.23 301.45,-18.70 346.07,61.91C368.71,100.84 399.26,100.84 421.90,61.91C466.32,-18.94 557.75,-18.78 602.06,61.91C624.73,100.84 655.24,100.83 677.90,61.90C721.66,-18.60 814.11,-18.86 858.07,61.91C872.08,81.78 878.47,90.85 895.99,90.85C943.45,84.30 949.65,-2.53 1024,0.06L1024,165.13C977.11,171.33 969.67,258.88 895.99,255.93Z" />
+    
+    <clipPath id="clip">
+      <rect x="0" y="0" width="1480" height="256" />
+    </clipPath>
+
+    <pattern id="pattern-main" width="0.8448490694939476" height="1" patternUnits="objectBoundingBox" viewBox="0 0 1024 256">
+      <use href="#wave-shape" fill="#11356a" />
+    </pattern>
+    
+    <pattern id="pattern-right" width="1" height="1" patternUnits="objectBoundingBox" viewBox="1024 0 10 256">
+      <use href="#wave-shape" fill="#11356a" />
+    </pattern>
+    
+    <pattern id="pattern-bottom" width="0.8448490694939476" height="1" patternUnits="objectBoundingBox" viewBox="0 256 1024 10">
+      <use href="#wave-shape" fill="#11356a" />
+    </pattern>
+    
+    <pattern id="pattern-corner" width="1" height="1" patternUnits="objectBoundingBox" viewBox="1024 256 10 10">
+      <use href="#wave-shape" fill="#11356a" />
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect fill="url(#pattern-main)" x="0" y="0" width="1212.05" height="256" />
+    <rect fill="url(#pattern-right)" x="1212.05" y="0" width="10" height="256" />
+    <rect fill="url(#pattern-bottom)" x="0" y="256" width="1212.05" height="10" />
+    <rect fill="url(#pattern-corner)" x="1212.05" y="256" width="10" height="10" />
+  </g>
+</svg>
