@@ -264,7 +264,7 @@ p.program-date {
 /* PARTNERS */
 section.partners {
   background-image: url(./images/grey\ bg.jpg);
-  padding: 100px 50px 50px 50px;
+  padding: 70px 50px 50px 50px;
   color: var(--grey);
 }
 .partners h2 {
@@ -277,7 +277,7 @@ section.partners {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  gap: 50px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .partners img {
@@ -289,6 +289,7 @@ section.partners {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .sponsors{
 gap: 40px;
@@ -470,8 +471,8 @@ img.hero-seagull-img {
     padding: 50px 30px 50px 30px;
   }
   .partners img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 90px;
+    max-height: 90px;
   }
   .join-left {
     /* background-color: var(--SecondaryColor); */
