@@ -282,12 +282,13 @@ section.partners {
 }
 .partners img {
   max-width: 150px;
-  max-height: 80px;
+  max-height: 150px;
 }
 .logos{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .sponsors{
 gap: 40px;
