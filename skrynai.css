@@ -283,6 +283,7 @@ section.partners {
 .partners img {
   max-width: 150px;
   max-height: 150px;
+  min-width: 120px;
 }
 .logos{
   display: flex;
@@ -290,6 +291,10 @@ section.partners {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
+}
+.info-partners{
+  gap: 40px;
+  margin-top: 50px;
 }
 .sponsors{
 gap: 40px;
