@@ -347,6 +347,7 @@ section.join {
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
+  margin-bottom:40px;
 }
 .join-card {
   background-color: #87a2f650;
@@ -354,13 +355,21 @@ section.join {
   padding: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   border-radius: 8px;
   padding: 20px;
   margin-top: 30px;
+  height: 390px;
   /* background-color: #fFDDDD20; */
+  transition: all 0.3s;
+  box-shadow: none;
 }
+.join-card:hover{
+  scale:1.03;
+
+}
+
 .join-card-icon{
   width: 20%;
   margin: 10px;
